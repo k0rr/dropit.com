@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Bitter|Shrikhand');
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(bilder/night-street-city-high-quality-1080P-wallpaper-middle-size.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.kolumner {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 30px;
+    grid-gap: 30px;
+}
+
+header {
+    background-color: rgb(154, 154, 154, 0.32);
+    height: 150px;
+}
+
+h1 {
+    font-family: 'Shrikhand', cursive;
+    font-size: 70px;
+    color: inherit;
+    text-align: center;
+    margin-top: -5px;
+}
+
+h1 a {
+    color: white;
+}
+
+h2 {
+    font-family: 'Bitter', serif;
+    text-align: center;
+    padding-top: 20px;
+}
+
+ul {
+    text-align: center;
+    margin-top: 30px;
+}
+
+li {
+    display: inline-block;
+    padding: 10px;
+}
+
+li a {
+    color: #2e2e2e;
+    font-family: 'Bitter', serif;
+    font-size: 20px;
+}
+
+main h3 {
+    font-family: 'Bitter', serif;
+    text-align: center;
+    margin-top: 200px;
+    background-color: rgb(154, 154, 154, 0.5);
+}
+
+a:hover, .active {
+    color: white;
+}
+
+main .artikel_1 {
+    background-color: rgb(154, 154, 154);
+    width: 500px;
+    height: 520px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+main .artikel_2 {
+    background-color: rgb(154, 154, 154);
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+main img {
+    width: 500px;
+    height: 300px;
+    padding-top: 20px;
+}
+
+main p {
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 10px;
+}
+
+.info {
+    background-color: rgb(154, 154, 154, 0.50);
+    width: 700px;
+    height: 500px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.info p {
+    text-align: center;
+    padding: 70px;
+    padding-top: 120px;
+    font-size: 20px;
+    font-family: 'Abel', sans-serif;
+}
+
+.btt {
+    float: right;
+    padding: 20px;
+    font-size: 17px;
+}
+
+.marke img {
+    width: 300px;
+    height: 270px;
+}
+
+.marke {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 60px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.brand {
+    padding: 20px;
+}
+
+#demo {
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+}
+
+footer {
+    position: fixed;
+    float: left;
+    bottom: 0px;
+    width: 100%;
+}
+
+footer p {
+    font-size: 12px;
+    color: white;
+}
+
+
+
+/* CSS för Log In form */
+
+label {
+    font-family: 'Bitter', serif;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    font-family: 'Abel', sans-serif;
+}
+
+input[type=checkbox] {
+    font-family: 'Bitter', serif;
+    font-weight: bold;
+}
+
+.container {
+    padding: 15px;
+}
+.cancelbtn {
+    background-color: red;
+    width: 120px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.signupbtn {
+    background-color: green;
+    width: 120px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(93, 93, 93, 0.79);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 60%;
+}
+
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
