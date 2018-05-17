@@ -148,6 +148,22 @@ main p {
     padding: 5px;
 }
 
+.minsida {
+    background-color: rgb(154, 154, 154, 0.50);
+    width: 700px;
+    height: 500px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.minsida h1 {
+
+}
+
+.minsida p {
+    padding: 25px;
+}
+
 footer {
     position: fixed;
     float: left;

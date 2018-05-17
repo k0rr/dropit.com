@@ -21,9 +21,11 @@
     <body>
         <?php
         session_start();
-        if (!isset($_SESSION["loggedin"])) {
-            $_SESSION["loggedin"] = false;
-        }
+    if (!isset($_SESSION["loggedin"])) {
+        $_SESSION["loggedin"] = false;
+        } elseif (!$_SESSION["loggedin"]) {
+        header("Location: min_sida.php");
+    }
         include '../../konfig_db_dropit/konfig_db_dropit.php';
         // Vi försöker öppna en anslutningen mot vår databas
         $conn = new mysqli($hostname, $user, $password, $database);
