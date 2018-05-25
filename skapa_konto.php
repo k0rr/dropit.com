@@ -41,7 +41,7 @@
 
         // Vårt sql-kommando
         $sql = "INSERT INTO anvandare
-                (email, username, psw) VALUES ('$email', '$username', '$hash');";
+                (email, username, hash) VALUES ('$email', '$username', '$hash');";
         // Nu kör vi vår SQL
         $result = $conn->query($sql);
         // Gick det bra att köra SQL-kommandot?

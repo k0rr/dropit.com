@@ -28,7 +28,7 @@
                     <li><a href="new_realeses.php">New realeses</a></li>
                     <li><a href="brands.php">Brands</a></li>
                     <li><a href="info.php">Info</a></li>
-                    <li><a class="active" href="info.php">My Page</a></li>
+                    <li><a class="active" href="min_sida.php">My Page</a></li>
 
                 </ul>
             </nav>

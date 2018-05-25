@@ -36,27 +36,27 @@
 
         <main class="marke">
             <div class="brand">
-                <a href=""><img src="bilder/e54402c3b6f3a8f09b0339fa29c30553.jpg"></a>
+                <a href="https://www.supremenewyork.com/"><img src="bilder/e54402c3b6f3a8f09b0339fa29c30553.jpg"></a>
             </div>
 
             <div class="brand">
-                <a href=""><img src="bilder/palace-streetlab_grande.jpg"></a>
+                <a href="https://www.palaceskateboards.com/"><img src="bilder/palace-streetlab_grande.jpg"></a>
             </div>
 
             <div class="brand">
-                <a href=""><img src="bilder/fila-blog-01.jpg"></a>
+                <a href="https://www.fila.de/en/home/"><img src="bilder/fila-blog-01.jpg"></a>
             </div>
 
             <div class="brand">
-                <a href=""><img src="bilder/yeezy.jpg"></a>
+                <a href="https://www.adidas.se/yeezy"><img src="bilder/yeezy.jpg"></a>
             </div>
 
             <div class="brand">
-                <a href=""><img src="bilder/flat,800x800,070,f.u6.jpg"></a>
+                <a href="https://www.off---white.com/"><img src="bilder/flat,800x800,070,f.u6.jpg"></a>
             </div>
 
             <div class="brand">
-                <a href=""><img src="bilder/logo-adidas-para-estampar-camiseta-D_NQ_NP_520705-MLB25072591024_092016-F.jpg"></a>
+                <a href="https://www.adidas.se/"><img src="bilder/logo-adidas-para-estampar-camiseta-D_NQ_NP_520705-MLB25072591024_092016-F.jpg"></a>
             </div>
         </main>
         <p class="btt"><a href="brands.php">Back to top</a></p>
