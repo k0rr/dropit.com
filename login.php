@@ -23,9 +23,9 @@
         session_start();
     if (!isset($_SESSION["loggedin"])) {
         $_SESSION["loggedin"] = false;
-    } elseif ($_SESSION["loggedin"]) {
+        } /*elseif (!$_SESSION["loggedin"]) {
         header("Location: min_sida.php");
-    }
+    }*/
         include '../../konfig_db_dropit/konfig_db_dropit.php';
         // Vi försöker öppna en anslutningen mot vår databas
         $conn = new mysqli($hostname, $user, $password, $database);
@@ -36,8 +36,6 @@
         // Tar emot data från formulär och rensar bort oönskade taggar eller kod
         $username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_STRING);
         $psw = filter_input(INPUT_POST, "psw", FILTER_SANITIZE_STRING);
-
-        echo "$username $psw ";
         // Om data finns
         if ($username && $psw) {
             // Sök efter anvandare i tabellen
@@ -46,17 +44,16 @@
             $result = $conn->query($sql);
             // Hämtar resultat från databassökningen
             $row = $result->fetch_assoc();
-            print_r($row);
+
             if (password_verify($psw, $row['hash'])) {
                 echo "Ja";
                 $_SESSION["loggedin"] = true;
                 $_SESSION["username"] = $username;
-                header("Location: min_sida.php");
             } else {
-                echo "Nej 1";
+                echo "Nej";
             }
         } else {
-            echo "Nej 2";
+            echo "Nej";
         }
 
         // Stänger ned anslutningen

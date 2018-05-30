@@ -9,6 +9,12 @@
 * @link
 */
 ?>
+<?php
+session_start();
+if (!isset($_SESSION["loggedin"])) {
+    $_SESSION["loggedin"] = false;
+}
+?>
     <!DOCTYPE html>
     <html lang="sv">
 
@@ -28,8 +34,14 @@
                     <li><a href="new_realeses.php">New realeses</a></li>
                     <li><a href="brands.php">Brands</a></li>
                     <li><a href="info.php">Info</a></li>
-                    <li><a href="skapa_konto.php">Create account</a></li>
-                    <li><a href="login.php">Log in</a></li>
+                    <?php
+                        if (!$_SESSION["loggedin"]) {
+                            echo "<li><a href=\"min_sida.php\">My page</a></li>";
+                        } else {
+                            echo "<li><a href=\"skapa_konto.php\">Create account</a></li>";
+                            echo "<li><a href=\"login.php\">Log in</a></li>";
+                        }
+                    ?>
                 </ul>
             </nav>
         </header>

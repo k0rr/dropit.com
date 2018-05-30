@@ -13,7 +13,6 @@ session_start();
 if (!isset($_SESSION["loggedin"])) {
     $_SESSION["loggedin"] = false;
 }
-print_r($_SESSION);
 ?>
     <!DOCTYPE html>
     <html lang="sv">

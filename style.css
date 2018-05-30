@@ -164,6 +164,14 @@ main p {
     padding: 25px;
 }
 
+#map {
+    height: 800px;;
+    width: 800px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
 footer {
     position: fixed;
     float: left;
@@ -176,8 +184,16 @@ footer p {
     color: white;
 }
 
+canvas {
+    background-color: rgb(154, 154, 154);
+}
 
-
+.canv {
+    height: 800px;
+    width: 800px;
+    margin: auto;
+    margin-bottom: 40px;
+}
 /* CSS för Log In form */
 
 label {
